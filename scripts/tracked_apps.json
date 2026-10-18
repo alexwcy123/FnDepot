@@ -1,0 +1,15 @@
+{
+  "comment": "跟踪的上游应用仓库清单。scripts/update_apps.py 依据本文件每日检查上游 GitHub Releases，自动将新版本写入根目录 fnpack.json。新增应用步骤：1) 先在 fnpack.json 的 apps 中人工补齐应用级元数据（display_name/desc/platform/categories/icon_url/run_as 等）；2) 再在本文件追加一条配置。脚本只负责 releases 版本节点，不生成、不改写应用级元数据。",
+  "apps": [
+    {
+      "appname": "fnmedia-ext",
+      "repo": "yujian0815/fnmedia-ext",
+      "include_prerelease": false
+    },
+    {
+      "appname": "lemon-music",
+      "repo": "jia070310/lemon-muisc",
+      "include_prerelease": false
+    }
+  ]
+}

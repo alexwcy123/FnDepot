@@ -1,0 +1,94 @@
+{
+  "schema_version": "2",
+  "source_info": {
+    "name": "FnDepot 外部应用源",
+    "author": "alexwcy123",
+    "homepage": "https://github.com/alexwcy123/FnDepot",
+    "description": "fnmedia-ext（飞牛影视在线扩展）与 lemon-music（柠檬音乐），自动跟踪上游 GitHub Release 更新"
+  },
+  "apps": {
+    "fnmedia-ext": {
+      "display_name": "飞牛影视在线扩展",
+      "desc": "飞牛影视第三方在线资源扩展：零侵入可逆接管官方影视入口，支持原生搜索聚合、豆瓣热门榜单四库与资源站海量分类四库（电影/剧集/动漫/综艺，无限滚动、点开即播）、m3u8/mp4 代理播放、多线路切换、噪音过滤、播放记录与智能续播，内置应用内管理页。需安装并启用官方「影视 (trim.media)」应用。",
+      "platform": [
+        "all"
+      ],
+      "categories": [
+        "影音娱乐"
+      ],
+      "icon_url": "https://raw.githubusercontent.com/yujian0815/fnmedia-ext/main/packaging/fpk/ICON.PNG",
+      "readme_url": "./fnmedia-ext/README.md",
+      "bug_report_url": "https://github.com/yujian0815/fnmedia-ext/issues",
+      "maintainer": "yujian0815",
+      "maintainer_url": "https://github.com/yujian0815/fnmedia-ext",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "",
+      "releases": {
+        "0.1.11": {
+          "changelog": "飞牛影视在线扩展 v0.1.11\n\n适配版本\n\n项目：要求 / 已验证\nfnOS：1.2.0 及以上\n官方影视应用：trim.media 0.9.8-1（已实测）\nCPU 架构：all（纯 Python）\n依赖：官方「影视 (trim.media)」已安装并启用\n\n停用本扩展会立即把 /var/run/trimmedia.sock 还原给官方影视服务，完全可逆；不修改官方程序与数据库。\n\n本次更新（v0.1.11）\n\n修复榜单影片播放报「资源不存在」：从首页热门榜单（豆瓣热门电影 / 剧集等）的列表上直接点播放时，部分影片提示资源不存在；现在进入榜单或直接点播放都能正常出片。\n独立库的「放宽」开关更名为「非过滤」，含义不变。\n\n自 v0.1.7 以来的主要更新\n\nv0.1.10 真实清晰度标注\n\n线路切换菜单的每个可选项标注实际分辨率（4K / 2K / 1080P / 720P 等），用系统 ffprobe 对真实可播地址探测，不采信资源站自报值；支持 AES-128 加密 HLS 与「PNG 头 + TS」伪装分片。结果按「标题 + 线路」缓存，不阻塞播放。\n修复一种伪装分片在飞牛播放器里无法解码的问题。\n\nv0.1.8 慢源 / 特殊播放地址更稳\n\n独立媒体库支持 302 跳转型线路（ac=videodiag 播放地址自动跟随跳转）。\n慢源建库更稳、首屏更快：首选分类超时自动……",
+          "updated_at": "2026-10-18T20:42:34+08:00",
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/yujian0815/fnmedia-ext/releases/download/v0.1.11/fnmedia-ext-0.1.11.fpk",
+              "sha256": "8a7814ce166f59620294334dd3c9bd7db2a3adc7f2d91d0917b34a8ca5ac2af8",
+              "size": 800950
+            }
+          }
+        },
+        "0.1.7": {
+          "changelog": "在线影视支持收藏与标记已看（收藏夹、详情页、库内「只看收藏」均可用，网页与飞牛影视 App 通用）；新增自定义独立媒体库：管理页可将任意资源站勾选为独立媒体库，以该站名单独生成片库卡片（无限滚动、点开即播）；支持导入 TVBox / 影视仓 / OK影视 配置（支持 base64、多订阅聚合），自动导入标准苹果CMS影视站并测速、去重。",
+          "updated_at": "2026-10-18T14:40:27+08:00",
+          "os_min_version": "1.2.0",
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/yujian0815/fnmedia-ext/releases/download/v0.1.7/fnmedia-ext-0.1.7.fpk",
+              "sha256": "38541fdd51e7a44432ac293f635004af37b7d50557528929dcd28d352ff6c26d",
+              "size": 789131
+            }
+          }
+        }
+      }
+    },
+    "lemon-music": {
+      "display_name": "柠檬音乐",
+      "desc": "面向飞牛 NAS、Docker 与自托管的 Web 音乐工具：多平台搜歌（酷我/酷狗/QQ/网易云/咪咕，FLAC·Hi-Res·母带，支持批量下载）、本地音乐库管理与标签整理、每日推荐、全屏逐字歌词与频谱播放、兼容落雪 LX Music 自定义音源脚本。依赖应用中心 Node.js v22。",
+      "platform": [
+        "x86",
+        "arm"
+      ],
+      "categories": [
+        "影音娱乐"
+      ],
+      "icon_url": "https://raw.githubusercontent.com/jia070310/lemon-muisc/main/icon.png",
+      "readme_url": "./lemon-music/README.md",
+      "bug_report_url": "https://github.com/jia070310/lemon-muisc/issues",
+      "maintainer": "jia070310",
+      "maintainer_url": "https://github.com/jia070310/lemon-muisc",
+      "run_as": "package",
+      "install_type": "",
+      "is_docker": false,
+      "service_port": "7983",
+      "releases": {
+        "1.2.17.10": {
+          "changelog": "投屏：开始投屏后本机暂停，由投屏设备播放，切歌继续推送到投屏端；切页：点击音乐库/发现/搜索即时反馈，先出框架和缓存再后台刷新；发现：打开歌单或专辑失败时留在详情页；播客：手机排版，订阅列表可刷新节目、取消订阅。",
+          "updated_at": "2026-10-17T12:06:36+08:00",
+          "os_min_version": "1.1.8",
+          "packages": {
+            "x86": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.10/lemon-music-1.2.17.10-x86.fpk",
+              "sha256": "abe1f46197323a18b08ee0a3804f7d95e5393b7204141fe42081e519a6413aec",
+              "size": 5544768
+            },
+            "arm": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.10/lemon-music-1.2.17.10-arm.fpk",
+              "sha256": "0002e44da8730e819393526e7465e8c72fef4a858829c9032c518fc3010a94f0",
+              "size": 5544786
+            }
+          }
+        }
+      }
+    }
+  }
+}
