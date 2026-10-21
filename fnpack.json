@@ -26,6 +26,17 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.2.3": {
+          "changelog": "v0.2.3 — 2026-10-21\n\n多端播放兼容性修复。\n\n修复\n修复部分移动 App / TV 端播放在线影视时提示 “http error” 的问题：增强加密 HLS 分片的服务端兼容处理，并修正严格播放器可能拒绝的重复响应头。\n为播放路径补充跨域预检（OPTIONS）响应，改善不同网络入口与严格客户端下的播放稳定性。\n分片请求统一返回一致的内容长度与媒体类型，减少播放中断或无法起播。",
+          "updated_at": "2026-10-21T13:12:13+08:00",
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/yujian0815/fnmedia-ext/releases/download/v0.2.3/fnmedia-ext-0.2.3-full.fpk",
+              "sha256": "e98ac156e5b98eb3574434acdc8b05ce940949089ac92809e68568b9bc9ca814",
+              "size": 7427005
+            }
+          }
+        },
         "0.2.0": {
           "changelog": "v0.2.0 — 2026-10-20\n\n合规与多端播放稳定性更新。本 Release 提供两个版本，按需下载：\n\n附件：体积：内容\nfnmedia-ext-0.2.0.fpk：~0.8MB：公开精简版：通用在线媒体库 / 搜索 / 播放能力，源码同本仓库\nfnmedia-ext-0.2.0-full.fpk：~7.4MB：完整版：在公开版之上额外包含 TVBox type=3 爬虫运行时（JVM / Node / 容器化 Android 一键部署）\n\n两个版本都已去除维护者的任何私人配置：不内置任何资源站点、订阅地址、爬虫 jar / 脚本或账号凭证。\n完整版的所有第三方源与执行组件均需你在管理页自行添加、自备授权（导入订阅 + 本地上传与源配套的执行组件），仅保存在你的设备上。\n\n完整版新增（-full）\n跨机一键部署容器化 Android 运行时：管理页一键从 Docker Hub 拉取公开运行时镜像、自动建容器并连接；预置后默认停止、手动启停、用完释放内存。公开镜像只含引擎与本项目自研桥接组件，不含任何第三方源或执行组件。\n源与执行组件完全自备：管理页导入 TVBox 加固订阅添加源；配套执行组件本地上传、自动下发到本机运行时，不进安装包、不上传第三方。\nJVM / JS 类源不依赖 Android 容器；管理页「关于」含完整免责声明。\n\n合规\n安装包不内置任何资源站点、订……",
           "updated_at": "2026-10-20T23:33:29+08:00",
@@ -93,6 +104,22 @@
       "is_docker": false,
       "service_port": "7983",
       "releases": {
+        "1.2.17.14": {
+          "changelog": "柠檬音乐 v1.2.17.14\n\n更新内容\n\n投屏：连播改由服务器维护队列，关掉手机或电脑界面后音箱仍会自动下一曲\n下载：手机端音质选择改为从左侧弹出，不再叠在「更多」菜单里\n账户：退出登录确认在手机上改为底部弹层\n音源：脚本声明的 qs / bili / ytb / xm 可在设置里开关（内置搜索仍为酷我 / 酷狗 / QQ / 网易云 / 咪咕）\n设置：音源平台列表改为锚定下拉，手机端尺寸缩小，不再盖住音源卡片\n\n安装 / 更新\n\nx86：lemon-music-1.2.17.14-x86.fpk\nARM：lemon-music-1.2.17.14-arm.fpk",
+          "updated_at": "2026-10-21T23:12:07+08:00",
+          "packages": {
+            "arm": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.14/lemon-music-1.2.17.14-arm.fpk",
+              "sha256": "738cd43cee9f4e366671eae8af706c4375f3371fc49d2db8ab79a5f3bf059f53",
+              "size": 5554742
+            },
+            "x86": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.14/lemon-music-1.2.17.14-x86.fpk",
+              "sha256": "3ca2c75830b7de19ffcc0b615c2549078a724c69fdb724ab73c0d57b7fd56029",
+              "size": 5554739
+            }
+          }
+        },
         "1.2.17.10": {
           "changelog": "投屏：开始投屏后本机暂停，由投屏设备播放，切歌继续推送到投屏端；切页：点击音乐库/发现/搜索即时反馈，先出框架和缓存再后台刷新；发现：打开歌单或专辑失败时留在详情页；播客：手机排版，订阅列表可刷新节目、取消订阅。",
           "updated_at": "2026-10-17T12:06:36+08:00",
