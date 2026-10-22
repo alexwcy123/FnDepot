@@ -104,6 +104,22 @@
       "is_docker": false,
       "service_port": "7983",
       "releases": {
+        "1.2.17.15": {
+          "changelog": "柠檬音乐 v1.2.17.15\n\n更新内容\n\n音源：支持导入 MusicFree / BakaMusic 插件（保留落雪、澜音）；可批量启用 / 停用 / 删除\n音源：万象等插件正确显示平台名；密钥过期或未填写时给出明确提示\n设置：修复「停用」按钮点了没反应；导入音源显示已等待秒数\n播放栏：长平台名简写（如「星海音乐源-汽水」→「汽水」），并保留音质显示\n酷狗：修复分享歌单（含 noshowgid）仅解析前 10 首的问题，完整拉取列表（感谢 @CrescentRuby）\n\n安装 / 更新\n\nx86：lemon-music-1.2.17.15-x86.fpk\nARM：lemon-music-1.2.17.15-arm.fpk",
+          "updated_at": "2026-10-22T21:34:28+08:00",
+          "packages": {
+            "arm": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.15/lemon-music-1.2.17.15-arm.fpk",
+              "sha256": "87c1647a799deed7e5bb5540f54040b9265e75704826f7c32ef93b171eeda647",
+              "size": 5586677
+            },
+            "x86": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.15/lemon-music-1.2.17.15-x86.fpk",
+              "sha256": "0b32389a9b6bf08c8c151492f421a8c0e8826a71fe353249b4e3e833b901deb4",
+              "size": 5586686
+            }
+          }
+        },
         "1.2.17.14": {
           "changelog": "柠檬音乐 v1.2.17.14\n\n更新内容\n\n投屏：连播改由服务器维护队列，关掉手机或电脑界面后音箱仍会自动下一曲\n下载：手机端音质选择改为从左侧弹出，不再叠在「更多」菜单里\n账户：退出登录确认在手机上改为底部弹层\n音源：脚本声明的 qs / bili / ytb / xm 可在设置里开关（内置搜索仍为酷我 / 酷狗 / QQ / 网易云 / 咪咕）\n设置：音源平台列表改为锚定下拉，手机端尺寸缩小，不再盖住音源卡片\n\n安装 / 更新\n\nx86：lemon-music-1.2.17.14-x86.fpk\nARM：lemon-music-1.2.17.14-arm.fpk",
           "updated_at": "2026-10-21T23:12:07+08:00",
