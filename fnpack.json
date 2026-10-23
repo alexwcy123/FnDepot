@@ -104,6 +104,22 @@
       "is_docker": false,
       "service_port": "7983",
       "releases": {
+        "1.2.17.16": {
+          "changelog": "柠檬音乐 v1.2.17.16\n\n更新内容\n\n飞牛 / FPK（修 1.2.17.15 升级后无法启用）\n\n修复升级到 1.2.17.15 后无法启用（ERRMODULENOTFOUND）：新增 MusicFree 依赖 axios / cheerio 后未触发 npm 补装；启用时检测并补齐\n修复补装后仍提示缺少 axios/cheerio：npm 装到实体 nodemodules 后被错误丢弃、链回旧持久目录；改为用新安装结果覆盖持久依赖\n\n下载\n\n大文件 / 母带下载：取消「整段 2 分钟」读超时误杀；改为无数据空闲超时，并支持 .part 断点续传\n服务重启后卡住的「下载中」任务会自动重新入队并尽量续传\n假无损校验失败等场景提示更准确，不再一律显示「网络抖动」\n\n音质升级\n\n匹配顺序：先当前激活音源，再试其它已激活音源（有的源无母带、有的有）\n未匹配到目标音质时，升级页顶部明确提示，避免误以为卡住\n\n其它\n\n普通用户「允许下载」开关\n听歌排行本地曲误标「网络」修复；列表无元数据时不再整列显示「—」\n用户列表表头与操作列对齐\n检测到新版本 / 用户数据变更时自动备份\n移动端音频焦点混音相关修复\n\n安装 / 更新\n\nx86：lemon-music-1.2.17.16-x86.fpk\nARM：lemon-music-1.2.17.16-arm.fpk",
+          "updated_at": "2026-10-23T23:09:07+08:00",
+          "packages": {
+            "arm": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.16/lemon-music-1.2.17.16-arm.fpk",
+              "sha256": "9027a6d8bce90f10614f2327d71f92668108ea4d2fd952a54b8cb2593274fef0",
+              "size": 5597797
+            },
+            "x86": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.16/lemon-music-1.2.17.16-x86.fpk",
+              "sha256": "c44b7eaba9f4eb9e1201e5396bbad2b5678886889fd1f18ed255c41649d91d52",
+              "size": 5597698
+            }
+          }
+        },
         "1.2.17.15": {
           "changelog": "柠檬音乐 v1.2.17.15\n\n更新内容\n\n音源：支持导入 MusicFree / BakaMusic 插件（保留落雪、澜音）；可批量启用 / 停用 / 删除\n音源：万象等插件正确显示平台名；密钥过期或未填写时给出明确提示\n设置：修复「停用」按钮点了没反应；导入音源显示已等待秒数\n播放栏：长平台名简写（如「星海音乐源-汽水」→「汽水」），并保留音质显示\n酷狗：修复分享歌单（含 noshowgid）仅解析前 10 首的问题，完整拉取列表（感谢 @CrescentRuby）\n\n安装 / 更新\n\nx86：lemon-music-1.2.17.15-x86.fpk\nARM：lemon-music-1.2.17.15-arm.fpk",
           "updated_at": "2026-10-22T21:34:28+08:00",
