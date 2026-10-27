@@ -26,6 +26,17 @@
       "is_docker": false,
       "service_port": "",
       "releases": {
+        "0.2.17": {
+          "changelog": "v0.2.17 — 2026-10-27\n\n内部资源收录与预加载改进（轻量版无可见变化）。\n\n全功能版：原生「🛡加固影视」开始收录“片单/推荐位”型资源站——像豆豆片单（饭太硬）这类把首页做成「热播电影/热播剧集/热播综艺/…榜单」的源，之前因分类名不含“电影/电视剧”字样几乎不显示，现已全部识别并正确区分电影与剧集，且默认启用；聚合热门墙扩到约 250+ 部。后台会串行预取各源推荐分类，点进分类基本即时呈现（与 OK影视 的预加载体验一致），并加固了单台安卓运行时在慢源下的稳定性。",
+          "updated_at": "2026-10-27T15:41:27+08:00",
+          "packages": {
+            "all": {
+              "download_url": "https://github.com/yujian0815/fnmedia-ext/releases/download/v0.2.17/fnmedia-ext-0.2.17-full.fpk",
+              "sha256": "39158d8893e2f4d87996ea8e0508ab36317903b34a799a9e8770a2fd22442147",
+              "size": 6213701
+            }
+          }
+        },
         "0.2.13": {
           "changelog": "v0.2.13 — 2026-10-25\n\n内部功能更新（轻量版无可见变化）。\n\n全功能版：原生「🛡加固影视」库筛选条接入源自带的“地区”二级筛选——「类型」行选某源分类、「地区」行选地区（跨源归并同物异名），即可像 OK影视/TVBox 一样按地区实时过滤片单。",
           "updated_at": "2026-10-25T20:44:28+08:00",
@@ -126,6 +137,22 @@
       "is_docker": false,
       "service_port": "7983",
       "releases": {
+        "1.2.17.19": {
+          "changelog": "柠檬音乐 v1.2.17.19\n\n更新内容\n\n关于页 · 安装包下载\n\n恢复「加速保存 / 直连」将最新 FPK 拉到 NAS\n保存位置改为下载目录下的「柠檬音乐更新」（不再写入 @appdata 系统目录），飞牛应用中心「手动安装」可直接选取\n未配置下载目录时会提示先到设置 → 访问权限中指定\n\n创建 / 编辑歌单\n\n修复弹窗内「封面模式」「音乐平台」等下拉经常点不开：菜单层级抬高，并避免被 <label> 二次点击立刻关掉\n\n安装 / 更新\n\nx86：lemon-music-1.2.17.19-x86.fpk\nARM：lemon-music-1.2.17.19-arm.fpk",
+          "updated_at": "2026-10-27T20:00:45+08:00",
+          "packages": {
+            "arm": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.19/lemon-music-1.2.17.19-arm.fpk",
+              "sha256": "7bfd751ba47c3180004f93d5de719c7f81ec3f06dfc2045181624c850445d0c9",
+              "size": 5612243
+            },
+            "x86": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.19/lemon-music-1.2.17.19-x86.fpk",
+              "sha256": "1558240519b1166a25c32c6d851d5b1e06a80e1cf1c6c9af584bbe36ca9c997c",
+              "size": 5612250
+            }
+          }
+        },
         "1.2.17.17": {
           "changelog": "柠檬音乐 v1.2.17.17\n\n更新内容\n\n音源\n\nMusicFree / BakaMusic：万象等分片插件在设置里合并为「合集」，可按平台单独开关\n合集导出：合集音源可一键导出全部平台脚本到「音源导出」目录，本地多选导入即可恢复\n汽水等无检索能力的平台：未提供搜索/下载时不在搜索栏显示\nMusicFree 播放：取链失败显示真实原因；不再误跨到内置平台乱搜成歌\n\n听书\n\n番茄 / 七猫 / 喜马拉雅等听书结果按「书 → 章节」两级打开\n喜马拉雅等歌曲搜索为空时，自动回退专辑搜索\n\n介绍文案\n\n应用中心 / README / 关于页简介补充落雪、澜音、MusicFree、BakaMusic 音源支持说明\n\n安装 / 更新\n\nx86：lemon-music-1.2.17.17-x86.fpk\nARM：lemon-music-1.2.17.17-arm.fpk",
           "updated_at": "2026-10-24T16:23:19+08:00",
