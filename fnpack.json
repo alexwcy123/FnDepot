@@ -269,6 +269,22 @@
       "is_docker": false,
       "service_port": "7983",
       "releases": {
+        "1.2.17.27": {
+          "changelog": "柠檬音乐 v1.2.17.27\n\n更新内容\n\n紧急修复 bug\n\n安装 / 更新\n\nx86：lemon-music-1.2.17.27-x86.fpk\nARM：lemon-music-1.2.17.27-arm.fpk",
+          "updated_at": "2026-11-24T23:43:22+08:00",
+          "packages": {
+            "arm": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.27/lemon-music-1.2.17.27-arm.fpk",
+              "sha256": "7d2ecf9d4ae36bdb2bdb94c93637fd202b0cb320a55c29e452c0e8a5e956dae3",
+              "size": 5746147
+            },
+            "x86": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.27/lemon-music-1.2.17.27-x86.fpk",
+              "sha256": "63cf875c272b1c630cc1405a9f08e77cee3b414853bda577d946fe0cb3ab0744",
+              "size": 5746141
+            }
+          }
+        },
         "1.2.17.25": {
           "changelog": "柠檬音乐 v1.2.17.25\n\n更新内容\n\n下载 · 同名检测\n音乐库索引新增 filebase 全路径检索键，下载同名检测不再依赖整盘扫描\n兼容 06. 歌手 - 歌名 与 歌名 - 歌手 等命名差异；支持多候选键 + 歌名/歌手身份匹配\n启动后后台分批回填 / 纠正旧键，避免阻塞服务\n\n曲库扫描稳定性\n合入大曲库相关修复（含 #59 / #60 / #61）：目录指纹、异步同步串行化、扫描路径等补丁落地源码\n\n播放 · 可视化\n桌面端开启转码（smooth）时不再误关频谱可视化\n仅移动端音频环境继续避开 Web Audio 直通\n\n播客\n「最近更新」支持横向滚动浏览\n修复滚动后卡片点击被指针捕获吞掉的问题\n播放历史弹层在手机端恢复居中展示\n\n音源探测\n探测项悬停提示改为更完整的说明文案\n\n安装 / 更新\n\nx86：lemon-music-1.2.17.25-x86.fpk\nARM：lemon-music-1.2.17.25-arm.fpk",
           "updated_at": "2026-11-22T02:13:15+08:00",
