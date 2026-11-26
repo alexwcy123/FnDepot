@@ -269,6 +269,22 @@
       "is_docker": false,
       "service_port": "7983",
       "releases": {
+        "1.2.17.28": {
+          "changelog": "柠檬音乐 v1.2.17.28\n\n更新内容\n\n紧急修复 bug\n\n安装 / 更新\n\nx86：lemon-music-1.2.17.28-x86.fpk\nARM：lemon-music-1.2.17.28-arm.fpk",
+          "updated_at": "2026-11-25T16:10:49+08:00",
+          "packages": {
+            "arm": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.28/lemon-music-1.2.17.28-arm.fpk",
+              "sha256": "ed316be80c6916435ad23b7cb8e7615dac041b1670c16abf26814b13700b474e",
+              "size": 6480357
+            },
+            "x86": {
+              "download_url": "https://github.com/jia070310/lemon-muisc/releases/download/v1.2.17.28/lemon-music-1.2.17.28-x86.fpk",
+              "sha256": "e792aacd23dc42196660dbbd040bbcff908fdbeda92d4c2c04ae58d019c61e45",
+              "size": 6480353
+            }
+          }
+        },
         "1.2.17.27": {
           "changelog": "柠檬音乐 v1.2.17.27\n\n更新内容\n\n紧急修复 bug\n\n安装 / 更新\n\nx86：lemon-music-1.2.17.27-x86.fpk\nARM：lemon-music-1.2.17.27-arm.fpk",
           "updated_at": "2026-11-24T23:43:22+08:00",
